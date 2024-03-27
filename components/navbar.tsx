@@ -12,20 +12,20 @@ export default function Navbar() {
     <div>
       <nav className="flex justify-between items-center w-full p-5 fixed top-0">
         <div className="">
-          <h1 className="text-2xl">Ahmad Fauzan</h1>
+          <h1 className="text-2xl font-thin">Ahmad Fauzan</h1>
         </div>
         <div className="hidden lg:flex">
           <a href="#" className="px-10">
             Home
+          </a>
+          <a href="#project" className="px-10">
+            Project
           </a>
           <a href="#contact" className="px-10">
             Contact
           </a>
           <a href="#about" className="px-10">
             About
-          </a>
-          <a href="#project" className="px-10">
-            Project
           </a>
         </div>
         <HiMenu
@@ -48,13 +48,13 @@ export default function Navbar() {
           Home
         </Link>
         <Link href="/" className="px-24 py-10" onClick={() => setDrawer(false)}>
+          Project
+        </Link>
+        <Link href="/" className="px-24 py-10" onClick={() => setDrawer(false)}>
           Contact
         </Link>
         <Link href="/" className="px-24 py-10" onClick={() => setDrawer(false)}>
           About
-        </Link>
-        <Link href="/" className="px-24 py-10" onClick={() => setDrawer(false)}>
-          Project
         </Link>
       </div>
     </div>
