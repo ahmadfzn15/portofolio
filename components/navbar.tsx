@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="flex justify-between items-center w-full p-5 fixed top-0">
+      <nav className="flex justify-between items-center w-full p-5 fixed top-0 z-50">
         <div className="">
           <h1 className="text-2xl font-thin">Ahmad Fauzan</h1>
         </div>
