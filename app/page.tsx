@@ -2,7 +2,7 @@
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, ThemeProvider } from "@material-tailwind/react";
 import gsap from "gsap";
 import { Poppins } from "next/font/google";
 import { useEffect, useRef } from "react";
@@ -45,6 +45,9 @@ export default function Home() {
           loop
           autoplayDelay={3000}
           transition={{ type: "tween", duration: 1 }}
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           <div className="relative overflow-hidden w-screen h-screen">
             <img src="/img/img2.jpg" className="w-full h-full object-cover" />
