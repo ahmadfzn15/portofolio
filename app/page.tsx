@@ -36,9 +36,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden scroll-smooth">
-      <Navbar />
-      <div className="p-5 h-screen w-screen bg-img"></div>
+    <>
+      <div className="h-auto w-screen bg-black grid grid-cols-1 lg:grid-cols-2 lg:pl-20 lg:pr-26">
+        <div className="lg:flex items-center hidden">
+          <h1 className="text-4xl font-bold italic">"Consistency is key"</h1>
+        </div>
+        <img src="/img/ahmad.jpg" className="select-none" alt="" />
+      </div>
       <div id="" className="h-screen w-screen">
         <Carousel
           autoplay
@@ -73,11 +77,22 @@ export default function Home() {
       </div>
       <div
         id=""
+        className="h-3/4 w-screen bg-img flex justify-center items-center"
+      >
+        <div className="w-2/3">
+          <h1 className="text-center text-xl">
+            ”Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+            dicta iure totam suscipit aut nostrum ea quae quidem, et voluptate”
+          </h1>
+        </div>
+      </div>
+      <div
+        id=""
         className="p-5 h-screen w-screen flex justify-center items-center"
       >
         <div
           ref={subscribe}
-          className="flex flex-col items-center mt-[100px] opacity-0 gap-5 w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-2/5"
+          className="flex flex-col items-center mt-[100px] gap-5 w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-2/5"
         >
           <h1 className="lg:text-3xl text-2xl font-bold tracking-widest">
             Stay Tuned
@@ -99,7 +114,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
