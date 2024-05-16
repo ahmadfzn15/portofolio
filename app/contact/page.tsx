@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <div className="py-20 px-10 h-full flex justify-center items-center">
-      <div className="flex flex-col items-center gap-5 w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-2/5">
+      <form className="flex flex-col items-center gap-5 w-11/12 sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-2/5">
         <h1 className="lg:text-3xl text-2xl font-bold tracking-widest">
           Stay Tuned
         </h1>
@@ -20,7 +20,7 @@ export default function Page() {
         >
           Subscribe me
         </button>
-      </div>
+      </form>
     </div>
   );
 }

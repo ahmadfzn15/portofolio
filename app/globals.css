@@ -35,5 +35,18 @@ body {
     url("/img/img.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  height: 13px;
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.7);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(51, 65, 85);
 }
