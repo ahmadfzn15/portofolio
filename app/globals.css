@@ -29,24 +29,22 @@ body {
 .bg-img {
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.85)
+      rgba(0, 0, 0, 0.30),
+      rgba(0, 0, 0, 0.30)
     ),
     url("/img/img.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
 
-::-webkit-scrollbar {
-  height: 13px;
-  width: 13px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(51, 65, 85, 0.7);
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(51, 65, 85);
+.bg-home {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ),
+    url("/img/landscape3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }

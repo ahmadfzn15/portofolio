@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-const poppins = Poppins({ weight: "200", subsets: ["latin"] });
+const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ahmad Fauzan",
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} overflow-hidden`}>
         <Navbar />
-        <div className="h-[calc(100vh-4rem)] mt-16 overflow-y-auto overflow-x-hidden">
+        <div className="h-screen overflow-y-auto overflow-x-hidden bg-white text-black">
           {children}
           <Footer />
         </div>
