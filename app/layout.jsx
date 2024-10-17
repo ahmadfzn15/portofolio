@@ -43,8 +43,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="antialiased">
         <nav
-          className={`py-8 px-20 flex items-center justify-between bg-white ${
-            isScrolled ? "fixed top-0 w-full shadow-lg" : ""
+          className={`px-20 flex items-center justify-between bg-white ${
+            isScrolled ? "fixed top-0 w-full shadow-lg py-4" : "py-8"
           }`}
         >
           <h1 className="font-extrabold text-3xl uppercase text-blue-600">
