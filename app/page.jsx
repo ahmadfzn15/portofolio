@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -53,6 +54,55 @@ export default function Home() {
 
       <div className="w-full h-screen flex flex-col justify-center items-center gap-20 px-20">
         <div className="space-y-4 text-center w-[50%]">
+          <h1 className="font-extrabold text-4xl uppercase">Skills</h1>
+          <p className="text-gray-500 text-center">
+            I've been doing web and android development for about 3 years now,
+            and I'm always eager to learn more in this fast paced industry.
+          </p>
+        </div>
+        <div className="grid grid-cols-1">
+          <div className="">
+            <h1 className="text-xl text-slate-700 uppercase">
+              Technology that i often use :
+            </h1>
+            <div className="grid grid-cols-4 gap-3">
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/flutter.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/kotlin.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/laravel.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/nextjs.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/reactjs.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/php.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/js.webp" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/html.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/css.png" className="w-28" />
+              </div>
+              <div className="flex justify-center items-center p-2 hover:transition-all transition-all hover:shadow-lg hover:shadow-slate-300">
+                <img src="/assets/logo/tailwind.png" className="w-28" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full h-screen flex flex-col justify-center items-center gap-20 px-20">
+        <div className="space-y-4 text-center w-[50%]">
           <h1 className="font-extrabold text-4xl uppercase">Service Offers</h1>
           <p className="text-gray-500 text-center">
             Is give may shall likeness made yielding spirit a itself togeth
@@ -72,7 +122,7 @@ export default function Home() {
           </div>
           <div className="bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-gray-400 hover:transition-all hover:duration-500 transition-all duration-500 p-10 flex flex-col items-center gap-5">
             <h1 className="font-extrabold text-2xl uppercase text-center">
-              UI/ux design
+              Mobile Development
             </h1>
             <p className="text-gray-500 text-center">
               Creeping for female light years that lesser can't evening heaven
@@ -81,7 +131,7 @@ export default function Home() {
           </div>
           <div className="bg-slate-50 hover:bg-white hover:shadow-2xl hover:shadow-gray-400 hover:transition-all hover:duration-500 transition-all duration-500 p-10 flex flex-col items-center gap-5">
             <h1 className="font-extrabold text-2xl uppercase text-center">
-              Web design
+              UI/UX Design
             </h1>
             <p className="text-gray-500 text-center">
               Creeping for female light years that lesser can't evening heaven
@@ -99,6 +149,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div></div>
+      <Footer />
     </>
   );
 }
