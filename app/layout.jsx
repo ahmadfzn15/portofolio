@@ -45,33 +45,33 @@ export default function RootLayout({ children }) {
         <nav
           className={`px-20 flex items-center justify-between bg-white ${
             isScrolled ? "fixed top-0 w-full shadow-lg py-4" : "py-8"
-          }`}
+          } z-50`}
         >
-          <h1 className="font-extrabold text-3xl uppercase text-blue-600">
-            Ahmad
-          </h1>
+          <div className="flex items-start gap-4">
+            <h1 className="font-extrabold text-3xl uppercase text-blue-600">
+              Ahmad
+            </h1>
+            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+          </div>
           <div className="space-x-10 font-bold text-sm uppercase">
-            <Link href="/" className="hover:text-blue-600">
+            <a href="#" className="hover:text-blue-600">
               Home
-            </Link>
-            <Link href="/about" className="hover:text-blue-600">
+            </a>
+            <a href="#about" className="hover:text-blue-600">
               About
-            </Link>
-            <Link href="/services" className="hover:text-blue-600">
+            </a>
+            <a href="#skills" className="hover:text-blue-600">
+              Skills
+            </a>
+            <a href="#services" className="hover:text-blue-600">
               Services
-            </Link>
-            <Link href="/portofolio" className="hover:text-blue-600">
+            </a>
+            <a href="#portofolio" className="hover:text-blue-600">
               Portofolio
-            </Link>
-            <Link href="/pages" className="hover:text-blue-600">
-              Pages
-            </Link>
-            <Link href="/blog" className="hover:text-blue-600">
-              Blog
-            </Link>
-            <Link href="/contact" className="hover:text-blue-600">
+            </a>
+            <a href="#contact" className="hover:text-blue-600">
               Contact
-            </Link>
+            </a>
           </div>
         </nav>
 
